@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="wrap">
         <SectionHead
           title="Let's build something sharp"
-          lead="Open for select projects, collaborations, and creative teams."
+          lead="Reach out for graphic design, video editing, and web work."
         />
         <div className="cards cards--2">
           <article className="card card--os" data-in="">
@@ -25,8 +25,8 @@ export default function Contact() {
                 <dd>{content.LOCATION}</dd>
               </div>
               <div>
-                <dt className="mono">Status</dt>
-                <dd>{content.AVAILABILITY}</dd>
+                <dt className="mono">Focus</dt>
+                <dd>{content.FOCUS}</dd>
               </div>
             </dl>
             <a className="btn btn-ink btn-lg" href={`mailto:${content.EMAIL}`}>

@@ -11,13 +11,13 @@ export default function Projects() {
     <section className="sec" id="work">
       <div className="wrap">
         <SectionHead
-          title="Selected work"
-          lead="Case studies focused on outcomes, clarity, and craft."
+          title="What I make"
+          lead="Creative services for design, video, and digital platforms."
         />
         <article className="card card--media" data-in="">
           <div className="card-bar mono">
-            <span>featured case · {featured.category}</span>
-            <span className="dim">outcome: {featured.outcome}</span>
+            <span>focus · {featured.category}</span>
+            <span className="dim">deliverable: {featured.outcome.replace(/^Deliverable: /, "")}</span>
           </div>
           <div className="reveal" style={{ minHeight: 380 }}>
             <div

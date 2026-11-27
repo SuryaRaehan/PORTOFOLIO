@@ -16,7 +16,7 @@ export default function Hero() {
         <DitherCanvas className="hero-dither" config={DITHER_CONFIG.HERO} />
         <div className="wrap hero-in">
           <div className="mono hero-top">
-            <span className="beta">{content.AVAILABILITY}</span>
+            <span className="beta">{content.FOCUS}</span>
             <span className="hero-notes">
               {content.LOCATION} · {content.ROLE}
             </span>

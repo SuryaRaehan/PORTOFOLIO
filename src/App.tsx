@@ -18,10 +18,10 @@ function Services() {
       <div className="wrap">
         <div className="head">
           <h2 className="h2" data-in="">
-            Made for work that matters
+            Creative services
           </h2>
           <p className="lead head-lead" data-in="" style={stagger(1)}>
-            Design, code, and polish — handled as one craft.
+            Design, edit, and build work for digital platforms.
           </p>
         </div>
         <div className="cards cards--3">
