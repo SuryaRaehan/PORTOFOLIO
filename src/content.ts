@@ -16,8 +16,8 @@ export const TAGLINE = "A portfolio for design, motion, and the web.";
 export const HERO_LEAD =
   "I shape brands, cut stories, and build websites — from first sketch to polished, performant delivery. Focused on visual systems, motion, and detail.";
 export const AVAILABILITY = "Available for select projects";
-export const LOCATION = "Jakarta, ID";
-export const EMAIL = "surya.raehan@example.com";
+export const LOCATION = "Special Region of Yogyakarta, ID";
+export const EMAIL = "suryaraehan73@gmail.com";
 export const RESUME_URL = "./resume.pdf";
 export const GITHUB_URL = "https://github.com/suryaraehan";
 export const LINKEDIN_URL = "https://linkedin.com/in/suryaraehan";
@@ -33,7 +33,7 @@ export const NAV: NavItem[] = [
 export const HERO_WORDS = ["designs.", "films.", "websites.", "experiences."];
 
 export const METRICS: Metric[] = [
-  { label: "Location", value: "Jakarta, ID" },
+  { label: "Location", value: "Special Region of Yogyakarta, ID" },
   { label: "Availability", value: "Q4 2026" },
   { label: "Experience", value: "5+ Years" },
   { label: "Focus", value: "Design / Motion / Web" },
