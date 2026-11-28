@@ -171,9 +171,10 @@
   .reveal--feature, .feature-in { min-height: 280px; }
   .feature-in { padding: 32px; gap: 12px; }
   .feature-title { font-size: clamp(32px,5vw,56px); }
-  .footer-mark { padding-top: clamp(40px,5vw,64px); }
-  .footer-mark .wrap { padding-bottom: clamp(40px,5vw,64px); }
-  .wordmark { font-size: clamp(40px,8vw,88px); line-height: .95; letter-spacing: -.05em; }
+  .footer-mark { padding-top: clamp(32px,4vw,48px); }
+  .footer-mark .wrap { padding-bottom: clamp(32px,4vw,48px); }
+  .wordmark { font-size: clamp(64px,8vw,96px); line-height: .82; letter-spacing: -.06em; }
+  .wordmark span { display: block; }
 }
 @media (max-width:900px) { .header-nav, .header-github { display: none; } .menu-button { display: grid; } .cards--3 { grid-template-columns: 1fr; } }
 @media (max-width:720px) {
@@ -211,9 +212,9 @@
   .faq details p { padding-right: 0; }
   .footer-top { padding-block: 40px; }
   .footer-cols { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .footer-mark { padding-top: 40px; }
-  .footer-mark .wrap { padding-bottom: 44px; }
-  .wordmark { font-size: clamp(32px,9vw,48px); }
+  .footer-mark { padding-top: 32px; }
+  .footer-mark .wrap { padding-bottom: 36px; }
+  .wordmark { font-size: clamp(40px,11vw,56px); line-height: .84; letter-spacing: -.055em; }
 }
 @media (max-width:480px) {
   .header-actions .btn-ink { display: none; }

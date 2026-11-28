@@ -53,7 +53,11 @@ export default function Footer() {
       <div className="footer-mark">
         <DitherCanvas className="footer-dither" config={DITHER_CONFIG.FOOTER} />
         <div className="wrap">
-          <p className="wordmark">{content.NAME}</p>
+          <p className="wordmark" aria-label={content.NAME}>
+            {content.NAME.split(" ").map((part) => (
+              <span key={part}>{part}</span>
+            ))}
+          </p>
         </div>
       </div>
       <div className="footer-base">
