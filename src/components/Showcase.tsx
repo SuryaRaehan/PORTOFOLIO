@@ -24,14 +24,7 @@ export default function Showcase() {
                 background: "radial-gradient(circle at 50% 30%, #1a1a1a, #050505 70%)",
               }}
             >
-              <div
-                style={{
-                  textAlign: "center",
-                  padding: 24,
-                  display: "grid",
-                  gap: 12,
-                }}
-              >
+              <div className="film-placeholder">
                 <p className="mono dim">SHOWREEL PLACEHOLDER</p>
                 <p className="lead">
                   Drop a demo video at <code>public/media/showreel.mp4</code>

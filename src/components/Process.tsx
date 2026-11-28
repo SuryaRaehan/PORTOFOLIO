@@ -19,16 +19,7 @@ export default function Process() {
       </div>
       <div className="wrap how-static">
         <div className="plate reveal">
-          <div
-            style={{
-              padding: "clamp(24px,3vw,40px)",
-              minHeight: 360,
-              display: "grid",
-              alignContent: "end",
-              gap: 16,
-              position: "relative",
-            }}
-          >
+          <div className="plate-in">
             <p className="mono dim">0{active + 1} / 05</p>
             <h3
               style={{

@@ -19,28 +19,10 @@ export default function Projects() {
             <span>focus · {featured.category}</span>
             <span className="dim">deliverable: {featured.outcome.replace(/^Deliverable: /, "")}</span>
           </div>
-          <div className="reveal" style={{ minHeight: 380 }}>
-            <div
-              style={{
-                padding: "clamp(24px,4vw,56px)",
-                minHeight: 380,
-                display: "grid",
-                alignContent: "end",
-                gap: 14,
-                position: "relative",
-                zIndex: 1,
-              }}
-            >
+          <div className="reveal reveal--feature">
+            <div className="feature-in">
               <p className="mono dim">{featured.category}</p>
-              <h3
-                style={{
-                  fontSize: "clamp(40px,1rem+4vw,84px)",
-                  letterSpacing: "-.05em",
-                  lineHeight: 0.95,
-                }}
-              >
-                {featured.title}
-              </h3>
+              <h3 className="feature-title">{featured.title}</h3>
               <p className="lead" style={{ maxWidth: "30em" }}>
                 {featured.body}
               </p>
