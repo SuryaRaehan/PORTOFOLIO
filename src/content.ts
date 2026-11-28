@@ -1,5 +1,7 @@
 import type {
   Capability,
+  EducationItem,
+  ExperienceItem,
   FaqItem,
   Metric,
   NavItem,
@@ -11,19 +13,22 @@ import type {
 } from "./model";
 
 export const NAME = "Surya Raehan Aryudi";
-export const ROLE = "Creative Video Editor & Graphic Designer";
+export const ROLE = "Video Editor & Graphic Designer";
 export const TAGLINE = "A portfolio for design, motion, and the web.";
 export const HERO_LEAD =
-  "Creative and detail-oriented, with a strong interest in visual communication, graphic design, and video editing. I turn ideas into engaging content — from promotional materials to edits for digital platforms — with consistency, quality, and care for detail.";
-export const FOCUS = "Graphic Design · Video Editing · Web";
-export const LOCATION = "Special Region of Yogyakarta, ID";
+  "I'm a visual creator with a strong interest in graphic design, video editing, and digital media development. I like exploring ideas and turning them into visual work — through design and video — while learning new tools in technology and creative practice. Through organizational experience, I'm used to collaborating on content and publication materials.";
+export const FOCUS = "Graphic Design · Video Editing · Digital Media";
+export const LOCATION = "Bantul, Yogyakarta, ID";
 export const EMAIL = "suryaraehan73@gmail.com";
-export const RESUME_URL = "./resume.pdf";
+export const PHONE = "+62 882-0064-19310";
+export const PHONE_URL = `tel:${PHONE.replace(/[^\d+]/g, "")}`;
+export const RESUME_URL = "./media/RESUME%20CV%20SURYA.pdf";
 export const GITHUB_URL = "https://github.com/suryaraehan";
 export const LINKEDIN_URL = "https://linkedin.com/in/suryaraehan";
 
 export const NAV: NavItem[] = [
   { label: "Process", href: "#process" },
+  { label: "Experience", href: "#experience" },
   { label: "Work", href: "#work" },
   { label: "Stack", href: "#stack" },
   { label: "Contact", href: "#contact" },
@@ -35,8 +40,55 @@ export const HERO_WORDS = ["designs.", "edits.", "stories.", "websites."];
 export const METRICS: Metric[] = [
   { label: "Location", value: LOCATION },
   { label: "Focus", value: "Graphic Design / Video Editing" },
-  { label: "Craft", value: "Visual Communication" },
-  { label: "Web", value: "HTML / CSS / JavaScript" },
+  { label: "Experience", value: "Freelance · 2023–2026" },
+  { label: "Education", value: "SMA Negeri 1 Imogiri" },
+];
+
+export const EXPERIENCE: ExperienceItem[] = [
+  {
+    period: "2025 – 2026",
+    role: "Head of Digital Media Team",
+    org: "Media Digital Organisasi",
+    highlights: [
+      "Production of a music video for a high school anthem",
+      "Creation of an organization website",
+      "Additional school photography",
+    ],
+  },
+  {
+    period: "2023 – 2026",
+    role: "Freelance Visual Creator",
+    org: "Freelance",
+    highlights: [
+      "Video editing and motion graphics",
+      "Bumper design and product posters",
+      "2D CNC acrylic design",
+    ],
+  },
+  {
+    period: "2020 – 2022",
+    role: "Creative Contributor",
+    org: "Putra Jaya Group",
+    highlights: [
+      "Poster and video promotion for products",
+      "Contributed product branding ideas",
+    ],
+  },
+];
+
+export const EDUCATION: EducationItem = {
+  period: "2025 – 2028",
+  school: "SMA Negeri 1 Imogiri",
+  detail: "Currently studying, with a focus on visual and digital creative work.",
+};
+
+export const SKILLS: string[] = [
+  "Video Editing",
+  "Graphic Design",
+  "Photography",
+  "Motion Graphics",
+  "Full-Stack Web Development",
+  "Leadership",
 ];
 
 export const PROCESS: ProcessStep[] = [
@@ -48,21 +100,21 @@ export const PROCESS: ProcessStep[] = [
   },
   {
     name: "Shape the visual",
-    detail: "Build layout, type, and identity elements that communicate clearly.",
+    detail: "Build posters, product graphics, and identity elements that communicate clearly.",
     previewTitle: "Visual system",
-    previewBody: "Typography, color, and composition across social and promotional materials.",
+    previewBody: "Typography, color, and composition across posters, social content, and branding.",
   },
   {
     name: "Cut and move",
-    detail: "Edit story-first, then refine pacing, motion graphics, and color.",
+    detail: "Edit story-first, then refine pacing, motion graphics, and bumpers.",
     previewTitle: "Motion & edit",
-    previewBody: "Cinematic and short-form edits with grading and purposeful animation.",
+    previewBody: "Music videos, promotional edits, and short-form work with purposeful animation.",
   },
   {
     name: "Build the page",
     detail: "Design and code responsive pages with HTML, CSS, and JavaScript.",
     previewTitle: "Web design",
-    previewBody: "Basic UI/UX, clean layout, and front-end work for digital platforms.",
+    previewBody: "Organization websites and responsive pages built for digital publications.",
   },
   {
     name: "Deliver and refine",
@@ -76,92 +128,100 @@ export const SERVICES: Service[] = [
   {
     tag: "design",
     title: "Graphic Design",
-    body: "Social media content, digital posters and promotional design, branding and visual identity, and marketing materials.",
+    body: "Poster and product design, social media content, branding ideas, and promotional materials.",
   },
   {
     tag: "motion",
     title: "Video Editing",
-    body: "Cinematic and promotional videos, social reels and short-form edits, event documentation, and video storytelling.",
+    body: "Music videos, video promotion, short-form edits, motion graphics, and bumper design.",
+  },
+  {
+    tag: "photo",
+    title: "Photography",
+    body: "School and product photography captured to support publications and promotions.",
   },
   {
     tag: "code",
-    title: "Digital Development",
-    body: "Website design and basic front-end development with HTML, CSS, and JavaScript.",
+    title: "Web Development",
+    body: "Organization websites and responsive pages, with front-end work and full-stack fundamentals.",
   },
 ];
 
 export const STACK: StackItem[] = [
-  { name: "Graphic & Social Design", cmd: "$ design --brand --social" },
-  { name: "Video & Post-Production", cmd: "$ edit --motion --grade" },
-  { name: "Typography & Layout", cmd: "$ type --scale --grid" },
-  { name: "Web & UI Basics", cmd: "$ html --css --javascript" },
+  { name: "Adobe Premiere Pro", cmd: "$ edit --timeline --color" },
+  { name: "Adobe After Effects", cmd: "$ motion --graphics --bumper" },
+  { name: "CapCut", cmd: "$ cut --short-form" },
+  { name: "Affinity by Canva", cmd: "$ design --poster --layout" },
+  { name: "Canva", cmd: "$ design --social --fast" },
+  { name: "VS Code", cmd: "$ code --web --fullstack" },
 ];
 
 export const CAPABILITIES: Capability[] = [
   {
     title: "Creative thinking",
-    body: "Turning ideas into clear visual work across design, editing, and web, with consistency from first draft to final export.",
+    body: "Exploring ideas and learning new tools in design, editing, and digital media to turn them into better visual work.",
     meta: "idea → output",
   },
   {
-    title: "Detail and collaboration",
-    body: "Attentive, adaptable, and responsible in teamwork and communication, with time management for delivery.",
-    meta: "craft → team",
+    title: "Leadership & collaboration",
+    body: "Led a digital media team and worked with peers on content and publication materials for school activities.",
+    meta: "team → delivery",
   },
 ];
 
 export const PROJECTS: Project[] = [
   {
-    category: "Graphic Design",
-    title: "Social media content",
-    body: "Posts, banners, and promotional graphics built for consistent visual communication across platforms.",
-    outcome: "Deliverable: social media assets",
-  },
-  {
     category: "Video Editing",
-    title: "Short-form video",
-    body: "Reels and short edits with story-led cuts, motion graphics, and color finishing.",
-    outcome: "Deliverable: platform-ready edits",
-  },
-  {
-    category: "Branding",
-    title: "Visual identity",
-    body: "Marks, type, and layout systems for brands that need a consistent look across materials.",
-    outcome: "Deliverable: identity guidelines",
+    title: "Music video for a school anthem",
+    body: "A music video produced for a high school anthem as part of the digital media team.",
+    outcome: "Deliverable: music video",
   },
   {
     category: "Web Design",
-    title: "Website design",
-    body: "Responsive pages and basic front-end builds using HTML, CSS, and JavaScript.",
-    outcome: "Deliverable: responsive website",
+    title: "Organization website",
+    body: "A website created for an organization, with responsive pages for its content and publications.",
+    outcome: "Deliverable: website",
+  },
+  {
+    category: "Graphic Design",
+    title: "Product promotion",
+    body: "Promotional posters and videos for products, developed with branding ideas at Putra Jaya Group.",
+    outcome: "Deliverable: posters and video",
+  },
+  {
+    category: "Freelance",
+    title: "Design & motion work",
+    body: "Bumper design, motion graphics, product posters, and 2D CNC acrylic design for freelance clients.",
+    outcome: "Deliverable: design assets",
   },
 ];
 
 export const FAQ: FaqItem[] = [
   {
     q: "What services do you offer?",
-    a: "Graphic design, video editing, and web design — including social media content, promotional materials, short-form video, and responsive websites.",
+    a: "Graphic design, video editing, photography, and web development — including posters, promotional videos, motion graphics, bumpers, and organization websites.",
   },
   {
-    q: "Which skills do you work with?",
-    a: "Visual communication, branding, typography and layout, post-production, color grading, motion graphics, basic UI/UX, and HTML, CSS, and JavaScript.",
+    q: "Which tools do you work with?",
+    a: "Adobe Premiere Pro, Adobe After Effects, CapCut, Affinity by Canva, Canva, and VS Code.",
   },
   {
-    q: "What does a typical project look like?",
-    a: "I start with the brief and platform, shape the visual direction, then design, edit, or build iteratively before delivering platform-ready files.",
+    q: "What experience do you have?",
+    a: "I've worked freelance since 2023, led a digital media team in 2025–2026, and created promotion materials at Putra Jaya Group from 2020 to 2022.",
   },
   {
     q: "Do you work with teams or solo?",
-    a: "Both. I can collaborate with an existing team or handle a project end-to-end, depending on what the work needs.",
+    a: "Both. As head of a digital media team, I'm used to collaborating on content and publication materials, and I also handle freelance projects end-to-end.",
   },
   {
     q: "How do we get started?",
-    a: "Send a brief by email with what you're making, your timeline, and what success looks like. I'll reply with next steps.",
+    a: "Send a brief by email or phone with what you're making, your timeline, and what success looks like. I'll reply with next steps.",
   },
 ];
 
 export const SOCIALS: SocialLink[] = [
   { label: "GitHub", href: GITHUB_URL },
   { label: "LinkedIn", href: LINKEDIN_URL },
+  { label: "Phone", href: PHONE_URL },
   { label: "Email", href: `mailto:${EMAIL}` },
 ];

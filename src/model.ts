@@ -8,6 +8,19 @@ export interface Metric {
   value: string;
 }
 
+export interface ExperienceItem {
+  period: string;
+  role: string;
+  org: string;
+  highlights: string[];
+}
+
+export interface EducationItem {
+  period: string;
+  school: string;
+  detail: string;
+}
+
 export interface ProcessStep {
   name: string;
   detail: string;

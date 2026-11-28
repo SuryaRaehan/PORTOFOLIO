@@ -68,6 +68,11 @@
 .card h3 { font-size: var(--t-h3); letter-spacing: -.04em; font-weight: 500; line-height: 1.05; }
 .card p { color: var(--ink-2); text-wrap: pretty; font-size: 15px; line-height: 1.5; }
 .card-tag { border: 1px solid var(--line-strong); color: var(--ink-2); border-radius: 4px; justify-self: start; margin-bottom: 28px; padding: 3px 8px; }
+.bullets { display: grid; gap: 8px; }
+.bullets li { color: var(--ink-2); font-size: 15px; line-height: 1.5; padding-left: 14px; position: relative; }
+.bullets li::before { content: "—"; color: var(--muted); position: absolute; left: 0; }
+.tag-list { flex-wrap: wrap; align-items: flex-start; gap: 8px; display: flex; }
+.tag-list .card-tag { margin-bottom: 0; white-space: nowrap; }
 .card--small h3 { letter-spacing: -.02em; font-size: 18px; }
 .card--media { gap: 0; padding: 0; overflow: hidden; }
 .card--media:hover { transform: none; }

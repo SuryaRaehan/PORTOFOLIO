@@ -4,6 +4,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Experience from "./components/Experience";
 import Process from "./components/Process";
 import Projects from "./components/Projects";
 import Showcase from "./components/Showcase";
@@ -24,7 +25,7 @@ function Services() {
             Design, edit, and build work for digital platforms.
           </p>
         </div>
-        <div className="cards cards--3">
+        <div className="cards cards--4">
           {SERVICES.map((service, index) => (
             <article className="card" data-in="" style={stagger(index)} key={service.title}>
               <p className="mono card-tag">{service.tag}</p>
@@ -47,6 +48,7 @@ export default function App() {
       <main id="main">
         <Hero />
         <Process />
+        <Experience />
         <Showcase />
         <Services />
         <Stack />

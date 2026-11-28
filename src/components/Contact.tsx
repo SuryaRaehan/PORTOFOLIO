@@ -21,6 +21,12 @@ export default function Contact() {
                 <dd>{content.EMAIL}</dd>
               </div>
               <div>
+                <dt className="mono">Phone</dt>
+                <dd>
+                  <a href={content.PHONE_URL}>{content.PHONE}</a>
+                </dd>
+              </div>
+              <div>
                 <dt className="mono">Location</dt>
                 <dd>{content.LOCATION}</dd>
               </div>
